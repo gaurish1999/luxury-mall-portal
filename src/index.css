@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #080808;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f0ece4;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #050505;
+  --color-gold: #c5a059;
+  --color-surface: #0f0f0f;
+  
+  --font-display: "Cinzel", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian text-white/90 font-sans antialiased;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    @apply font-display tracking-[0.2em] uppercase text-white;
+  }
+
+  /* Smooths out the text rendering for dark backgrounds */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
