@@ -1,37 +1,50 @@
-🏙️ Luxury Mall Investor Portal
-A high-fidelity, interactive investor relations platform designed for a premier luxury retail destination. This portal serves as a strategic tool for stakeholders to visualize market performance, demographic insights, and the curated retail ecosystem.
+# 🏢 Luxury Retail Investor Relations Portal
+### **Strategic Stakeholder Engagement & Asset Visualization Platform**
 
-💎 Core Features
-Cinematic Interactive Hero: A high-performance video background optimized for a smooth, high-immersion experience.
+🚀 **[View Live Deployment (Coming Soon)](#)** | 💻 **[View Source Code](https://github.com/gaurish1999/luxury-mall-portal)**
 
-Data-Driven Demographics: An interactive dashboard utilizing Recharts to visualize footfall trends and market growth metrics.
+An enterprise-grade, high-fidelity interactive dashboard engineered to articulate the value proposition of a flagship luxury retail destination. Designed for institutional investors, prospective luxury tenants, and executive stakeholders, this portal synthesizes complex demographic data, spatial capabilities, and tenant ecosystems into a seamless, high-performance digital experience.
 
-Bento-Grid Insights: A sophisticated demographic breakdown using a modern bento-box layout with Framer Motion animations.
+---
 
-Luxury Retail Showcase: A manual horizontal carousel featuring high-end brand mosaics with adaptive edge-masking for a seamless UI.
+## 📊 **Executive Modules & Functionality**
 
-Event Concierge System: A functional booking request platform for world-class event venues, complete with high-end glassmorphism modals.
+*   **Immersive Frontdoor Architecture (Hero)**: A high-performance, cinematic video background engineered for high-immersion stakeholder onboarding without compromising render speeds.
+*   **Dynamic Market & Footfall Analytics**: Interactive, scalable data visualization dashboards utilizing **Recharts** to track year-over-year foot traffic, retail sales velocity, and regional market penetration.
+*   **Granular Demographic Segmentation**: A sophisticated, modern bento-box layout powered by **Framer Motion** to clearly communicate target audience wealth metrics and consumer behavior profiles.
+*   **Curated Tenant Ecosystem Showcase**: A hardware-accelerated horizontal carousel detailing the property's 620+ premium brands, structured to highlight the curation of specialized retail wings (e.g., The Diamond Wing, La Maison).
+*   **Premium Venue & Concierge Management**: A secure, glassmorphic booking interface allowing brands to request activation spaces and high-capacity event venues with integrated state management.
 
-🛠️ Technical Stack
-Frontend: React.js with Vite for lightning-fast development and optimized builds.
+---
 
-Styling: Tailwind CSS for a custom "Obsidian & Gold" luxury design system.
+## 🛠️ **Technical Architecture**
 
-Animations: Framer Motion for high-frame-rate transitions and interactive states.
+The platform is built on a modern, decoupled frontend stack prioritizing rendering speed, modularity, and maintainability.
 
-Data Visualization: Recharts for responsive, SVG-based performance charting.
+*   **Core Framework**: `React.js` (via `Vite` for optimized, lightning-fast HMR and production builds).
+*   **Design System & Styling**: `Tailwind CSS`, utilizing a custom, highly disciplined **Obsidian & Gold** design token system for brand consistency.
+*   **Kinetic UI & Animation**: `Framer Motion` for orchestrating complex, staggered entry animations and layout transitions.
+*   **Data Visualization**: `Recharts` for performant, SVG-based quantitative charting.
+*   **Iconography**: `Lucide-React` for scalable, minimalist visual indicators.
 
-Icons: Lucide-React for a clean, consistent minimalist aesthetic.
+---
 
-🚀 Performance Optimization
-Locked 60 FPS: Engineered specifically for high-refresh-rate displays (e.g., LG UltraGear) ensuring zero stutter during complex transitions.
+## 🚀 **Performance Benchmarks & Optimizations**
 
-Asset Management: Implemented WebP image formatting and object-cover cropping for rapid asset loading without visual degradation.
+This application was engineered with strict performance tolerances to ensure a premium UX across all devices, particularly high-refresh-rate displays.
 
-Adaptive Masking: Utilized CSS mask-image linear gradients to provide "Apple-tier" transparency fades on horizontal scrolling containers.
+*   **Locked 60+ FPS Rendering**: Heavily optimized render cycles and staggered animation mounting to ensure zero frame-drops or stuttering on 144Hz+ monitors (e.g., LG UltraGear).
+*   **Advanced Asset Delivery**: Universal implementation of `.webp` compression and `object-cover` focal cropping to minimize payload size while maintaining editorial-quality photography.
+*   **Apple-Tier CSS Masking**: Replaced standard overlay gradients with computationally efficient `mask-image` linear CSS gradients, eliminating rendering artifacts and providing seamless, true-transparent scroll fading.
 
-📁 Project Structure
+---
+
+## 📂 **Repository Structure**
+
+```text
 src/
-├── components/      # Reusable UI wrappers and layout logic
-├── data/            # Centralized constants and business metrics
-└── sections/        # Main feature components (Hero, Retail, Events, etc.)
+├── components/      # Reusable UI wrappers, layout primitives, and shared logic
+├── data/            # Centralized state configuration, business metrics, and CDN assets
+├── sections/        # Modular executive views (Hero, Demographics, Retail, Events)
+├── App.jsx          # Root application layout and component orchestration
+└── index.css        # Global CSS variables, custom font imports, and Tailwind directives
