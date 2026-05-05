@@ -1,7 +1,7 @@
 # 🏢 Luxury Retail Investor Relations Portal
 ### **Strategic Stakeholder Engagement & Asset Visualization Platform**
 
-🚀 **[View Live Deployment (Coming Soon)](#)** | 💻 **[View Source Code](https://github.com/gaurish1999/luxury-mall-portal)**
+🚀 **[View Live Deployment: https://luxury-mall-portal.vercel.app/** | 💻 **[View Source Code](https://github.com/gaurish1999/luxury-mall-portal)**
 
 An enterprise-grade, high-fidelity interactive dashboard engineered to articulate the value proposition of a flagship luxury retail destination. Designed for institutional investors, prospective luxury tenants, and executive stakeholders, this portal synthesizes complex demographic data, spatial capabilities, and tenant ecosystems into a seamless, high-performance digital experience.
 
