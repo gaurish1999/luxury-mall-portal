@@ -1,16 +1,37 @@
-# React + Vite
+🏙️ Luxury Mall Investor Portal
+A high-fidelity, interactive investor relations platform designed for a premier luxury retail destination. This portal serves as a strategic tool for stakeholders to visualize market performance, demographic insights, and the curated retail ecosystem.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+💎 Core Features
+Cinematic Interactive Hero: A high-performance video background optimized for a smooth, high-immersion experience.
 
-Currently, two official plugins are available:
+Data-Driven Demographics: An interactive dashboard utilizing Recharts to visualize footfall trends and market growth metrics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Bento-Grid Insights: A sophisticated demographic breakdown using a modern bento-box layout with Framer Motion animations.
 
-## React Compiler
+Luxury Retail Showcase: A manual horizontal carousel featuring high-end brand mosaics with adaptive edge-masking for a seamless UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Event Concierge System: A functional booking request platform for world-class event venues, complete with high-end glassmorphism modals.
 
-## Expanding the ESLint configuration
+🛠️ Technical Stack
+Frontend: React.js with Vite for lightning-fast development and optimized builds.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: Tailwind CSS for a custom "Obsidian & Gold" luxury design system.
+
+Animations: Framer Motion for high-frame-rate transitions and interactive states.
+
+Data Visualization: Recharts for responsive, SVG-based performance charting.
+
+Icons: Lucide-React for a clean, consistent minimalist aesthetic.
+
+🚀 Performance Optimization
+Locked 60 FPS: Engineered specifically for high-refresh-rate displays (e.g., LG UltraGear) ensuring zero stutter during complex transitions.
+
+Asset Management: Implemented WebP image formatting and object-cover cropping for rapid asset loading without visual degradation.
+
+Adaptive Masking: Utilized CSS mask-image linear gradients to provide "Apple-tier" transparency fades on horizontal scrolling containers.
+
+📁 Project Structure
+src/
+├── components/      # Reusable UI wrappers and layout logic
+├── data/            # Centralized constants and business metrics
+└── sections/        # Main feature components (Hero, Retail, Events, etc.)
