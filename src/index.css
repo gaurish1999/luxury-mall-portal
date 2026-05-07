@@ -63,3 +63,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* Custom Scrollbar for the Roadmap and other long sections */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c5a059; /* Your Gold Accent */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e2c284; /* A lighter gold on hover */
+}

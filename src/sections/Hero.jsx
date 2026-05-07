@@ -126,10 +126,10 @@ export default function Hero({ onExplore }) {
           muted
           loop
           playsInline
-          className="h-full w-full object-cover opacity-60"
+          className="h-full w-full object-cover"
         >
           {/* Hero Video */}
-          <source src="/TourismHero_Final No Fade.mp4" type="video/mp4" />
+          <source src="/LIAT.AI - Hero Video.mp4" type="video/mp4" />
         </video>
         
         {/* Luxury Vignette Overlay */}
@@ -145,17 +145,16 @@ export default function Hero({ onExplore }) {
           className="max-w-4xl"
         >
           <span className="mb-4 block text-xs md:text-sm font-semibold tracking-[0.4em] text-gold-light uppercase">
-            A Global Destination
+            The Dubai Mall
           </span>
           
           <h1 className="mb-6 text-5xl md:text-7xl lg:text-8xl font-display leading-tight text-white uppercase">
-            The Center <br />
-            <span className="text-gold">of Everything</span>
+            The Heart of<br />
+            <span className="text-gold">Downtown Dubai</span>
           </h1>
           
           <p className="mb-10 max-w-xl text-lg font-light text-white/70 leading-relaxed font-sans">
-            Where luxury meets entertainment. Experience the world's most iconic retail 
-            destination, reimagined for the modern era.
+            Experience the world's most visited retail and entertainment destination, featuring over 1,200 stores and world-class attractions.
           </p>
 
           {/* The Working Button */}

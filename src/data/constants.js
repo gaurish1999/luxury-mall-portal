@@ -1,100 +1,3 @@
-// export const NAV_SECTIONS = [
-//   { id: 'hero', label: 'Overview', icon: 'home' },
-//   { id: 'demographics', label: 'Demographics', icon: 'bar-chart-2' },
-//   { id: 'retail', label: 'Luxury Retail', icon: 'shopping-bag' },
-//   { id: 'events', label: 'Events & Venues', icon: 'calendar' },
-// ]
-
-// export const FOOTFALL_DATA = [
-//   { year: '2019', visitors: 28 },
-//   { year: '2020', visitors: 14 },
-//   { year: '2021', visitors: 22 },
-//   { year: '2022', visitors: 33 },
-//   { year: '2023', visitors: 38 },
-//   { year: '2024', visitors: 40 },
-//   { year: '2025', visitors: 45 },
-// ]
-
-// export const STATS = [
-//   { value: 40, suffix: 'M+', label: 'Annual Visitors', prefix: '' },
-//   { value: 2, suffix: 'B+', label: 'Retail Sales', prefix: '$' },
-//   { value: 1.2, suffix: 'M', label: 'Sq. Ft. Retail Space', prefix: '' },
-//   { value: 620, suffix: '+', label: 'Premium Brands', prefix: '' },
-// ]
-
-// export const RETAIL_BRANDS = [
-//   {
-//     name: 'Louis Vuitton',
-//     category: 'Fashion',
-//     image: 'https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Chanel',
-//     category: 'Haute Couture',
-//     image: 'https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Rolex',
-//     category: 'Fine Watches',
-//     image: 'https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Cartier',
-//     category: 'Fine Jewelry',
-//     image: 'https://images.pexels.com/photos/2363696/pexels-photo-2363696.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Gucci',
-//     category: 'Luxury Fashion',
-//     image: 'https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Dior',
-//     category: 'Haute Couture',
-//     image: 'https://images.pexels.com/photos/3782161/pexels-photo-3782161.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-//   {
-//     name: 'Tiffany & Co.',
-//     category: 'Fine Jewelry',
-//     image: 'jewelry-tiffany.webp',
-//   },
-//   {
-//     name: 'Prada',
-//     category: 'Fashion',
-//     image: 'https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800',
-//   },
-// ]
-
-// export const VENUES = [
-//   {
-//     id: 'atrium',
-//     name: 'The Grand Atrium',
-//     description: 'A soaring five-story glass cathedral of commerce, ideal for luxury product launches, fashion shows, and brand activations in the heart of the mall.',
-//     capacity: '5,000',
-//     sqft: '28,000',
-//     image: 'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1200',
-//     tags: ['Fashion Shows', 'Brand Activations', 'Product Launches'],
-//   },
-//   {
-//     id: 'expo',
-//     name: 'The Expo Center',
-//     description: 'A fully configurable column-free hall with state-of-the-art AV infrastructure, private loading docks, and catering facilities for large-scale exhibitions.',
-//     capacity: '12,000',
-//     sqft: '65,000',
-//     image: 'https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1200',
-//     tags: ['Exhibitions', 'Concerts', 'Corporate Events'],
-//   },
-//   {
-//     id: 'rooftop',
-//     name: 'The Sky Terrace',
-//     description: 'An exclusive open-air rooftop venue with panoramic skyline views, perfect for intimate luxury receptions, private dinners, and high-profile press events.',
-//     capacity: '800',
-//     sqft: '12,000',
-//     image: 'https://images.pexels.com/photos/1449791/pexels-photo-1449791.jpeg?auto=compress&cs=tinysrgb&w=1200',
-//     tags: ['Private Dining', 'Press Events', 'Receptions'],
-//   },
-// ]
-
 export const NAV_SECTIONS = [
   { id: 'hero', label: 'Overview', icon: 'home' },
   { id: 'demographics', label: 'Demographics', icon: 'bar-chart-2' },
@@ -102,103 +5,151 @@ export const NAV_SECTIONS = [
   { id: 'events', label: 'Events & Venues', icon: 'calendar' },
 ];
 
-export const FOOTFALL_DATA = [
-  { year: '2019', visitors: 28 },
-  { year: '2020', visitors: 14 },
-  { year: '2021', visitors: 22 },
-  { year: '2022', visitors: 33 },
-  { year: '2023', visitors: 38 },
-  { year: '2024', visitors: 40 },
-  { year: '2025', visitors: 45 },
+export const STATS = [
+  { label: 'Annual Visitors (2024)', value: 111, suffix: 'M+', prefix: '' },
+  { label: 'Retail Sales Velocity', value: 12.5, suffix: 'B+', prefix: '$' },
+  { label: 'Gross Leasable Area', value: 3.7, suffix: 'M+', prefix: '' }, // Sq Ft GLA
+  { label: 'Premium Brands', value: 1200, suffix: '+', prefix: '' },
 ];
 
-export const STATS = [
-  { value: 40, suffix: 'M+', label: 'Annual Visitors', prefix: '' },
-  { value: 2, suffix: 'B+', label: 'Retail Sales', prefix: '$' },
-  { value: 1.2, suffix: 'M', label: 'Sq. Ft. Retail Space', prefix: '' },
-  { value: 620, suffix: '+', label: 'Premium Brands', prefix: '' },
+export const FOOTFALL_DATA = [
+  { year: '2020', visitors: 62 },
+  { year: '2021', visitors: 78 },
+  { year: '2022', visitors: 88 },
+  { year: '2023', visitors: 105 },
+  { year: '2024', visitors: 111 }, // Record breaking year
 ];
 
 export const RETAIL_BRANDS = [
   {
-    name: 'Tiffany & Co.',
-    category: 'Fine Jewelry',
-    image: 'jewelry-tiffany.webp', 
-    url: 'https://www.tiffany.com/',
-  },
-  {
-    name: 'Louis Vuitton',
-    category: 'Haute Couture',
-    image: 'louis-vuitton.webp',
-    url: 'https://www.louisvuitton.com/',
+    name: 'Hermès',
+    category: 'Fashion Avenue',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800',
+    url: 'https://www.hermes.com'
   },
   {
     name: 'Rolex',
-    category: 'Horology',
-    image: 'rolex.webp',
-    url: 'https://www.rolex.com/',
+    category: 'Watches & Jewelry',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=800',
+    url: 'https://www.rolex.com'
   },
   {
-    name: 'Tom Ford',
-    category: 'Fashion & Fragrance',
-    image: 'tom-ford.webp',
-    url: 'https://www.tomford.com/',
+    name: 'Galeries Lafayette',
+    category: 'The Avenue',
+    image: 'https://images.unsplash.com/photo-1555529771-835f59fc5efe?auto=format&fit=crop&q=80&w=800',
+    url: 'https://www.galerieslafayette.ae'
   },
   {
-    name: 'Chanel',
-    category: 'Fragrance',
-    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=900&h=1600',
-    url: 'https://www.chanel.com/',
+    name: 'Fashion Avenue',
+    category: 'Flagship District',
+    image: 'https://images.unsplash.com/photo-1582650859079-ee63913ecb84?auto=format&fit=crop&q=80&w=800',
+    url: 'https://thedubaimall.com/en/shop/fashion-avenue'
+  }
+  // Add more brands as needed
+];
+
+export const RETAIL_WINGS = [
+  { wing: 'Fashion Avenue', speciality: 'Haute Couture & Luxury', brands: 150 },
+  { wing: 'The Souk', speciality: 'Jewelry & Arabic Heritage', brands: 220 },
+  { wing: 'The Village', speciality: 'Outdoor Lifestyle & Denim', brands: 85 },
+  { wing: 'Chinatown', speciality: 'Asian Fashion & Wellness', brands: 60 },
+];
+
+export const EVENT_VENUES = [
+  {
+    id: 'star-atrium',
+    name: 'The Star Atrium',
+    capacity: '2,500+',
+    description: 'The mall’s central architectural masterpiece, offering unrivaled 360-degree visibility across four levels. Ideal for massive product launches and high-footfall public activations.',
+    features: ['360° Visibility', 'High-Res LED Integration', 'Central Footfall'],
+    image: 'https://images.unsplash.com/photo-1582650859079-ee63913ecb84?auto=format&fit=crop&q=80&w=800'
   },
   {
-    name: 'Hermès',
-    category: 'Leather Goods',
-    image: 'hermes.webp',
-    url: 'https://www.hermes.com/',
+    id: 'fashion-catwalk',
+    name: 'Fashion Avenue Catwalk',
+    capacity: '800',
+    description: 'A dedicated, ultra-luxury setting within the high-fashion wing. Features a built-in professional runway and hydraulic platform, surrounded by the world’s leading maisons.',
+    features: ['Ultra-Luxury Setting', 'Built-in Runway', 'VIP Seating Areas'],
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800'
   },
   {
-    name: 'Balenciaga',
-    category: 'Avant-Garde',
-    image: 'balenciaga.webp',
-    url: 'https://www.balenciaga.com/',
+    id: 'ice-rink',
+    name: 'Dubai Ice Rink',
+    capacity: '5,000+',
+    description: 'An Olympic-sized venue that transforms into a massive concert or exhibition hall. Features advanced audio-visual infrastructure and customizable flooring for unique, large-scale events.',
+    features: ['Olympic Sized', 'Multi-purpose Flooring', 'Concert Audio'],
+    // FIXED URL: High-quality indoor rink atmosphere
+    image: 'https://images.unsplash.com/photo-1517137879134-48acfbe3be13?auto=format&fit=crop&q=80&w=800'
   },
   {
-    name: 'Gucci',
-    category: 'Accessories',
-    image: 'gucci.webp',
-    url: 'https://www.gucci.com/',
+    id: 'fountain-views',
+    name: 'Fountain Views Boardwalk',
+    capacity: '1,500+',
+    description: 'An exclusive outdoor activation zone with breathtaking, front-row views of The Dubai Fountain and Burj Khalifa. The ultimate destination for high-impact evening events and brand takeovers.',
+    features: ['Burj Khalifa View', 'Fountain Proximity', 'Premium Outdoor Zone'],
+    // FIXED URL: Stunning evening view of the Dubai Fountain & Burj Khalifa
+    image: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
-export const VENUES = [
+export const EXPANSION_ROADMAP = [
   {
-    id: 'atrium',
-    name: 'The Grand Atrium',
-    description: 'A soaring five-story glass cathedral of commerce, ideal for luxury product launches, fashion shows, and brand activations in the heart of the mall.',
-    capacity: '5,000',
-    sqft: '28,000',
-    // Luxury architectural interior
-    image: '/grand-atrium.webp', 
-    tags: ['Fashion Shows', 'Brand Activations', 'Product Launches'],
+    phase: 'Phase I',
+    title: 'Groundbreaking & Site Prep',
+    date: 'Q3 2024',
+    status: 'Completed',
+    investment: 'AED 250M',
+    details: 'Initial structural reinforcement of the North Wing and utility diversion to support vertical expansion.'
   },
   {
-    id: 'expo',
-    name: 'The Expo Center',
-    description: 'A fully configurable column-free hall with state-of-the-art AV infrastructure, private loading docks, and catering facilities for large-scale exhibitions.',
-    capacity: '12,000',
-    sqft: '65,000',
-    // Moody event/stage lighting
-    image: '/expo-center.webp', 
-    tags: ['Exhibitions', 'Concerts', 'Corporate Events'],
+    phase: 'Phase II',
+    title: 'The Grand Atrium Link',
+    date: 'Q2 2025',
+    status: 'In Progress',
+    investment: 'AED 600M',
+    details: 'Integration of the new luxury corridor connecting the existing Fashion Avenue to the new expansion zone.'
   },
   {
-    id: 'rooftop',
-    name: 'The Sky Terrace',
-    description: 'An exclusive open-air rooftop venue with panoramic skyline views, perfect for intimate luxury receptions, private dinners, and high-profile press events.',
-    capacity: '800',
-    sqft: '12,000',
-    // Upscale outdoor/rooftop event space
-    image: 'sky-terrace.webp', 
-    tags: ['Private Dining', 'Press Events', 'Receptions'],
+    phase: 'Phase III',
+    title: 'Luxury Retail Handover',
+    date: 'Q4 2025',
+    status: 'Upcoming',
+    investment: 'AED 450M',
+    details: 'Handover of 240 new units to global anchor tenants and luxury maisons for fit-out works.'
   },
+  {
+    phase: 'Phase IV',
+    title: 'Grand Inauguration',
+    date: 'Q2 2026',
+    status: 'Future',
+    investment: 'AED 200M',
+    details: 'Completion of the expansion, adding 1.2M sq. ft. of premium leasable area to the Dubai Mall portfolio.'
+  }
+];
+
+export const LIFESTYLE_ASSETS = [
+  {
+    id: 'aquarium',
+    name: 'Dubai Aquarium',
+    stat: '10M Liters',
+    label: 'Water Capacity',
+    description: 'Dive into a world of wonder at Dubai Mall Aquarium & Underwater Zoo, experience one of the world’s largest suspended aquariums, home to thousands of marine animals. Walk through a mesmerizing tunnel surrounded by sharks, rays, and vibrant schools of fish. Meet majestic crocodiles, playful otters, and enchanting penguins in the captivating Underwater Zoo above.',
+    image: 'https://mcpprodcdn.azureedge.net/uploads/advertisement/mainPicture/69d36331721d4.jpg'
+  },
+  {
+    id: 'fountain',
+    name: 'The Dubai Fountain',
+    stat: '6,600',
+    label: 'WET Superlights',
+    description: 'Dubai Fountain Experience the world’s largest choreographed fountain show, a breathtaking spectacle set on the Burj Lake beside Dubai Mall. The iconic attraction brings music, and light together in perfect harmony, dancing in sync with classical melodies and contemporary hits. Dubai Fountain Timings: • Afternoon Shows (Except Friday): 1:00 PM & 1:30 PM • Evening Shows (Every 30 minutes): 6:00 PM - 11:30 PM • Friday Shows: 2:00 PM & 2:30 PM',
+    image: 'https://mcpprodcdn.azureedge.net/uploads/store/elevatedPic/69677f022d566.jpg'
+  },
+  {
+    id: 'burj-khalifa',
+    name: 'AT THE TOP, BURJ KHALIFA',
+    stat: '2,717',
+    label: 'Feet Tall',
+    description: 'Step into a world of wonder as you ascend to At the Top, Burj Khalifa, the world\'s tallest observation deck at Dubai Mall. Soar high above the vibrant city, where breath-taking panoramic views stretch from the desert skyline to the sparkling Arabian Gulf.',
+    image: 'https://mcpprodcdn.azureedge.net/uploads/store/plus1Pic/68108b8e6f5e5.jpg'
+  }
 ];
