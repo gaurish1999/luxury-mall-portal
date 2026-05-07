@@ -17,33 +17,57 @@ export const FOOTFALL_DATA = [
   { year: '2021', visitors: 78 },
   { year: '2022', visitors: 88 },
   { year: '2023', visitors: 105 },
-  { year: '2024', visitors: 111 }, // Record breaking year
+  { year: '2024', visitors: 111 },
 ];
 
 export const RETAIL_BRANDS = [
   {
     name: 'Hermès',
     category: 'Fashion Avenue',
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800',
+    image: 'hermes.webp', 
     url: 'https://www.hermes.com'
+  },
+  {
+    name: 'Louis Vuitton',
+    category: 'Fashion Avenue',
+    image: 'louis-vuitton.webp', 
+    url: 'https://www.louisvuitton.com'
   },
   {
     name: 'Rolex',
     category: 'Watches & Jewelry',
-    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=800',
+    image: 'rolex.webp', 
     url: 'https://www.rolex.com'
   },
   {
-    name: 'Galeries Lafayette',
-    category: 'The Avenue',
-    image: 'https://images.unsplash.com/photo-1555529771-835f59fc5efe?auto=format&fit=crop&q=80&w=800',
-    url: 'https://www.galerieslafayette.ae'
+    name: 'Cartier',
+    category: 'Watches & Jewelry',
+    image: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwa6a43eb2/images/large/8906b9f795c250f5aaa8000ceea4536d.png?sw=2000&sh=2000&sm=fit&sfrm=png', // Your preferred watch/jewelry image
+    url: 'https://www.cartier.com'
   },
   {
-    name: 'Fashion Avenue',
-    category: 'Flagship District',
-    image: 'https://images.unsplash.com/photo-1582650859079-ee63913ecb84?auto=format&fit=crop&q=80&w=800',
-    url: 'https://thedubaimall.com/en/shop/fashion-avenue'
+    name: 'Henry Jacques',
+    category: 'Perfumes & Lifestyle',
+    image: 'https://henry-jacques.transforms.svdcdn.com/production/images/home/Voyage-banner/HJ-2025-Voyage-8804_HIGH-RES-CROP-FULL-NICKQUINEv2_2-edited.png?w=1800&h=1350&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1763998819&s=b7a29c98a14557252f9de8ff05bc9493', 
+    url: 'https://parfumshenryjacques.com/'
+  },
+  {
+    name: 'Balenciaga',
+    category: 'Fashion Avenue',
+    image: 'balenciaga.webp', 
+    url: 'https://www.balenciaga.com'
+  },
+  {
+    name: 'Tiffany & Co.',
+    category: 'The Souk',
+    image: 'tiffany.webp',
+    url: 'https://www.tiffany.com'
+  },
+  {
+    name: 'Gucci',
+    category: 'Fashion Avenue',
+    image: 'gucci.webp', 
+    url: 'https://www.gucci.com'
   }
   // Add more brands as needed
 ];

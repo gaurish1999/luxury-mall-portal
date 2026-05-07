@@ -12,10 +12,10 @@ const statIcons = [Users, TrendingUp, Store, Star]
 
 // Ghost Images strictly for Dubai Mall Context
 const statBgImages = [
-  'https://images.unsplash.com/photo-1582650859079-ee63913ecb84?auto=format&fit=crop&q=80&w=800', // Dubai Mall Interior/Aquarium vibes
-  '/60150765_BLT_SIO2X1.webp', // Your preferred wealth/fashion image
+  'https://dmassetsprodcdn.azureedge.net/assets/media/fashion-avenue/seemless-shopping.png', // Dubai Mall Interior/Aquarium vibes
+  '/retail-sales-velocity.webp', // Your preferred wealth/fashion image
   'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800', // Burj Khalifa/Downtown view
-  'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=800', // Luxury Watch/Fashion Avenue vibe
+  '/brands.webp', // Luxury Watch/Fashion Avenue vibe
 ]
 
 const containerVariants = {
