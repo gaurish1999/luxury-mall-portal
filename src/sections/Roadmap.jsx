@@ -17,13 +17,9 @@ const itemVariants = {
 export default function Roadmap({ nextPage, prevPage }) {
   return (
     <SectionWrapper>
-      {/* 1. Main Relative Container */}
+      {/* Main Container */}
       <div className="relative h-full w-full overflow-hidden">
         
-        {/* 2. THE BACKGROUND IMAGE (GHOST LAYER)
-           We use 'fixed' or 'absolute inset-0' to keep it behind the content.
-           Opacity set to 15% for clear visibility without distracting from data.
-        */}
         <div 
           className="absolute inset-0 z-0 opacity-15 grayscale pointer-events-none"
           style={{ 
@@ -34,11 +30,11 @@ export default function Roadmap({ nextPage, prevPage }) {
           }}
         />
 
-        {/* 3. SCROLLABLE CONTENT LAYER */}
+        {/*SCROLLABLE CONTENT LAYER */}
         <div className="relative z-10 h-full w-full overflow-y-auto custom-scrollbar px-6 md:px-12">
           <div className="py-20 max-w-5xl mx-auto">
             
-            {/* Header Section */}
+            {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
               <div className="max-w-2xl">
                 <motion.span 
@@ -68,7 +64,7 @@ export default function Roadmap({ nextPage, prevPage }) {
               </div>
             </div>
 
-            {/* Timeline Implementation */}
+            {/* Timeline */}
             <motion.div 
               variants={containerVariants}
               initial="hidden"
@@ -76,7 +72,7 @@ export default function Roadmap({ nextPage, prevPage }) {
               viewport={{ once: true }}
               className="relative"
             >
-              {/* Vertical Glowing Line */}
+              {/* Vertical Line */}
               <div className="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-[#c5a059]/50 via-[#c5a059]/20 to-transparent" />
 
               {EXPANSION_ROADMAP.map((item, index) => {
@@ -124,7 +120,9 @@ export default function Roadmap({ nextPage, prevPage }) {
             <div className="h-40" />
           </div>
         </div>
+
         <SectionFooter nextPage={nextPage} prevPage={prevPage} />
+        
       </div>
     </SectionWrapper>
   )

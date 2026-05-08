@@ -2,11 +2,9 @@ import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
 import SectionWrapper from '../components/SectionWrapper'
-// Import data, but we'll provide fallbacks below to prevent crashes
 import * as Constants from '../data/constants'
 import SectionFooter from '../components/SectionFooter'
 
-// Fallback data in case constants.js is missing these specific arrays
 const RETAIL_BRANDS = Constants.RETAIL_BRANDS || []
 const RETAIL_WINGS = Constants.RETAIL_WINGS || [
   { wing: 'Fashion Avenue', speciality: 'Haute Couture', brands: 150 },
@@ -26,7 +24,7 @@ const itemVariants = {
 }
 
 function BrandCard({ brand }) {
-  // Defensive check: if brand is undefined, don't render
+
   if (!brand) return null;
 
   return (
@@ -41,7 +39,9 @@ function BrandCard({ brand }) {
         <img
           src={brand.image}
           alt={brand.name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+          className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-out 
+                     grayscale-[0.9] brightness-[0.6] sepia-[0.3] contrast-[1.1]
+                     group-hover:scale-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:sepia-0"
           loading="lazy"
         />
       )}

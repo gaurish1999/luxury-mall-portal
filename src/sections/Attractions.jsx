@@ -43,7 +43,7 @@ export default function Attractions({ nextPage, prevPage }) {
               variants={itemVariants}
               className={`relative overflow-hidden rounded-3xl group min-h-[400px] border border-white/5 ${index === 0 ? 'md:col-span-2' : 'md:col-span-1'}`}
             >
-              {/* Background Image with Parallax Effect */}
+              {/* Background Image */}
               <div 
                 className="absolute inset-0 z-0 grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000 ease-out"
                 style={{ 
@@ -80,7 +80,6 @@ export default function Attractions({ nextPage, prevPage }) {
           ))}
         </motion.div>
 
-        {/* Strategy Footer Card */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -98,6 +97,7 @@ export default function Attractions({ nextPage, prevPage }) {
         </motion.div>
         
         <SectionFooter nextPage={nextPage} prevPage={prevPage} />
+
         <div className="h-20" />
       </div>
     </SectionWrapper>

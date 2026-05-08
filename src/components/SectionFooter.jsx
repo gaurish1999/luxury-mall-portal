@@ -4,6 +4,7 @@ import { ArrowRight, ArrowLeft } from 'lucide-react'
 export default function SectionFooter({ nextPage, prevPage }) {
   return (
     <div className="mt-20 py-12 border-t border-white/5 flex justify-between items-center gap-8">
+      
       {/* PREVIOUS PAGE BUTTON */}
       <button 
         onClick={prevPage.onClick}

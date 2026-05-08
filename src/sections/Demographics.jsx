@@ -10,12 +10,14 @@ import SectionFooter from '../components/SectionFooter'
 
 const statIcons = [Users, TrendingUp, Store, Star]
 
-// Ghost Images strictly for Dubai Mall Context
 const statBgImages = [
-  'https://dmassetsprodcdn.azureedge.net/assets/media/fashion-avenue/seemless-shopping.png', // Dubai Mall Interior/Aquarium vibes
-  '/retail-sales-velocity.webp', // Your preferred wealth/fashion image
-  'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800', // Burj Khalifa/Downtown view
-  '/brands.webp', // Luxury Watch/Fashion Avenue vibe
+
+  // combination of local asset files and public ones
+
+  'https://dmassetsprodcdn.azureedge.net/assets/media/fashion-avenue/seemless-shopping.png',
+  '/retail-sales-velocity.webp',
+  'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800',
+  '/brands.webp',
 ]
 
 const containerVariants = {
@@ -47,7 +49,7 @@ export default function Demographics({  nextPage, prevPage  }) {
     <SectionWrapper>
       <div className="w-full py-8">
         
-        {/* Header section updated for Dubai Mall */}
+        {/* Header */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -66,14 +68,14 @@ export default function Demographics({  nextPage, prevPage  }) {
           </motion.p>
         </motion.div>
 
-        {/* Bento Grid */}
+        {/* Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="show"
           className="grid grid-cols-12 gap-6"
         >
-          {/* Chart Cell */}
+          {/* Chart */}
           <motion.div
             variants={itemVariants}
             className="col-span-12 lg:col-span-8 bg-surface border border-white/5 rounded-2xl p-8 hover:border-gold/20 transition-colors duration-500"
@@ -137,7 +139,7 @@ export default function Demographics({  nextPage, prevPage  }) {
             </p>
           </motion.div>
 
-          {/* 4 Mini Stat Cards */}
+          {/* Mini Stat Cards */}
           {STATS.map((stat, i) => {
             const Icon = statIcons[i]
             const bgImage = statBgImages[i]
@@ -207,7 +209,7 @@ export default function Demographics({  nextPage, prevPage  }) {
                 { country: 'United Kingdom', pct: '14%' },
                 { country: 'Saudi Arabia', pct: '11%' },
                 { country: 'Oman', pct: '7%' },
-                { country: 'United States', pct: '28%' }, // Combines others/global
+                { country: 'United States', pct: '28%' },
               ].map(({ country, pct }) => (
                 <div key={country} className="flex justify-between items-center py-3 border-b border-white/5 group hover:border-gold/30 transition-colors">
                   <span className="text-white/50 text-xs tracking-wider group-hover:text-white transition-colors">{country}</span>
@@ -219,7 +221,9 @@ export default function Demographics({  nextPage, prevPage  }) {
           </motion.div>
 
         </motion.div>
+
         <SectionFooter nextPage={nextPage} prevPage={prevPage} />
+        
       </div>
     </SectionWrapper>
   )

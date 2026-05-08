@@ -1,5 +1,3 @@
-// 
-
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Sidebar from './components/Sidebar'
@@ -32,22 +30,17 @@ const SECTION_ORDER = ['hero', 'demographics', 'retail', 'attractions', 'roadmap
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
-  // 1. Sidebar visibility state - Default to hidden for the landing/intro
   const [showSidebar, setShowSidebar] = useState(false);
-
   const currentIndex = SECTION_ORDER.indexOf(activeSection);
   const nextSectionId = SECTION_ORDER[(currentIndex + 1) % SECTION_ORDER.length];
   const prevSectionId = SECTION_ORDER[(currentIndex - 1 + SECTION_ORDER.length) % SECTION_ORDER.length];
-
   const nextMetadata = SECTION_MAP[nextSectionId];
   const prevMetadata = SECTION_MAP[prevSectionId];
-
   const ActiveComponent = SECTIONS[activeSection];
 
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[#080808]">
       
-      {/* 2. Animated Sidebar: Slides in/out based on showSidebar state */}
       <AnimatePresence>
         {showSidebar && (
           <motion.div
@@ -66,12 +59,13 @@ export default function App() {
         <AnimatePresence mode="wait">
           <ActiveComponent
             key={activeSection}
-            // Passing dynamic navigation
+
+            // dynamic navigation
             nextPage={{ 
               label: nextMetadata.label, 
               onClick: () => {
                 setActiveSection(nextSectionId);
-                setShowSidebar(true); // Ensure sidebar is visible when navigating forward
+                setShowSidebar(true);
               } 
             }}
             prevPage={{ 
@@ -81,12 +75,12 @@ export default function App() {
                 setShowSidebar(true);
               } 
             }}
-            // Landing actions
+
             onExplore={() => {
               setActiveSection('demographics');
               setShowSidebar(true);
             }}
-            // 3. Prop to allow Hero to control Sidebar visibility
+
             setSidebarVisible={setShowSidebar}
           />
         </AnimatePresence>

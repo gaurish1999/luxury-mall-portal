@@ -63,12 +63,11 @@ export default function Events({ nextPage, prevPage }) {
     variants={itemVariants}
     className="group relative overflow-hidden bg-surface border border-white/5 rounded-2xl p-6 flex flex-col md:flex-row gap-6 hover:border-gold/30 transition-all duration-500 cursor-default min-h-[14rem]"
   >
-    {/* FIXED IMAGE CONTAINER: Locked to w-48 and h-48 to prevent stretching */}
+    
     <div className="w-full md:w-48 h-48 rounded-xl overflow-hidden flex-shrink-0 bg-black/20">
       <img 
         src={venue.image} 
         alt={venue.name} 
-        // object-cover is the secret sauce—it crops the 4:3 image into our 1:1 box perfectly
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" 
       />
     </div>
@@ -120,7 +119,6 @@ export default function Events({ nextPage, prevPage }) {
 ))}
           </motion.div>
 
-          {/* Right Side: Activation Request Form (Unchanged, sticky) */}
           <motion.div 
             variants={itemVariants}
             initial="hidden"
@@ -136,7 +134,7 @@ export default function Events({ nextPage, prevPage }) {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2 ml-1">Company Name</label>
-                  <input type="text" required className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-3 text-white text-sm focus:border-gold/40 focus:outline-none transition-colors" placeholder="e.g. LVMH Group"/>
+                  <input type="text" required className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-3 text-white text-sm focus:border-gold/40 focus:outline-none transition-colors placeholder:italic placeholder:text-white/20" placeholder="e.g., ABC Services LLC"/>
                 </div>
                 <div>
                   <label className="block text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2 ml-1">Preferred Venue</label>
@@ -146,7 +144,7 @@ export default function Events({ nextPage, prevPage }) {
                 </div>
                 <div>
                   <label className="block text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2 ml-1">Proposed Date Range</label>
-                  <input type="text" className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-3 text-white text-sm focus:border-gold/40 focus:outline-none transition-colors" placeholder="Q3 - Q4 2026"/>
+                  <input type="text" className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-3 text-white text-sm focus:border-gold/40 focus:outline-none transition-colors placeholder:italic placeholder:text-white/20" placeholder="e.g., Q3 - Q4 2026"/>
                 </div>
 
                 <button type="submit" className="w-full mt-6 bg-gold hover:bg-gold-light text-obsidian font-bold py-4 rounded-lg uppercase text-[10px] tracking-[0.3em] flex items-center justify-center gap-2 transition-all duration-300 active:scale-95">

@@ -7,17 +7,15 @@ import {
   Calendar, 
   ChevronLeft, 
   ChevronRight, 
-  TrendingUp // Added for Roadmap
+  TrendingUp
 } from 'lucide-react';
 import {BarChart3, Map, Compass } from 'lucide-react'
 
-// 1. Fixed variable name to navItems
-// 2. Added the 'icon' property to each object so the component can render it
 const navItems = [
   { id: 'hero', label: 'Overview', icon: Home },
   { id: 'demographics', label: 'Demographics', icon: PieChart },
   { id: 'retail', label: 'Retail Wings', icon: ShoppingBag },
-  { id: 'attractions', label: 'Attractions', icon: Compass }, // Add this
+  { id: 'attractions', label: 'Attractions', icon: Compass },
   { id: 'roadmap', label: 'Expansion', icon: TrendingUp }, 
   { id: 'events', label: 'Events', icon: Calendar },
 ]
@@ -32,7 +30,7 @@ export default function Sidebar({ activeSection, onNavigate }) {
       transition={{ type: 'spring', stiffness: 200, damping: 25 }}
       className="relative z-50 flex h-full flex-col border-r border-white/5 bg-[#080808]"
     >
-      {/* The Sleek Toggle Button */}
+      {/* Toggle Button */}
       <button
         onClick={() => setIsCollapsed(!isCollapsed)}
         className="absolute -right-4 top-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-[#080808] text-white/50 shadow-lg shadow-black/50 transition-all hover:scale-110 hover:border-[#c5a059] hover:text-[#c5a059]"
@@ -40,7 +38,7 @@ export default function Sidebar({ activeSection, onNavigate }) {
         {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
       </button>
 
-      {/* Luxury Logo Area */}
+      {/* Logo Area */}
       <div 
         onClick={() => onNavigate('hero')}
         className="group flex h-32 cursor-pointer overflow-hidden items-center justify-center border-b border-white/5 transition-colors hover:bg-white/[0.02]"
@@ -62,7 +60,7 @@ export default function Sidebar({ activeSection, onNavigate }) {
       <nav className="flex flex-1 flex-col gap-2 px-3 py-10">
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
-          const Icon = item.icon; // This now correctly references the icon component
+          const Icon = item.icon;
 
           return (
             <button
@@ -84,12 +82,12 @@ export default function Sidebar({ activeSection, onNavigate }) {
                 />
               )}
 
-              {/* The Icon */}
+              {/* Icon */}
               <div className="flex min-w-[24px] justify-center transition-transform duration-300 group-hover:scale-110">
                 <Icon size={20} strokeWidth={isActive ? 2.5 : 1.5} />
               </div>
 
-              {/* The Label */}
+              {/* Label */}
               {!isCollapsed && (
                 <motion.span 
                   initial={{ opacity: 0 }}
