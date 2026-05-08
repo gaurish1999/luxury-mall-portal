@@ -3,17 +3,18 @@ import { ArrowRight, ArrowLeft } from 'lucide-react'
 
 export default function SectionFooter({ nextPage, prevPage }) {
   return (
-    <div className="mt-20 py-12 border-t border-white/5 flex justify-between items-center gap-8">
+    <div className="mt-20 py-8 md:py-12 border-t border-white/5 flex justify-between items-center gap-4">
       
       {/* PREVIOUS PAGE BUTTON */}
       <button 
         onClick={prevPage.onClick}
-        className="group flex items-center gap-4 text-white/30 hover:text-white transition-all duration-300"
+        className="group flex items-center gap-2 md:gap-4 text-white/30 hover:text-white transition-all duration-300"
       >
-        <div className="bg-white/5 group-hover:bg-white/10 p-2 rounded-full transition-colors">
-          <ArrowLeft size={16} />
+        <div className="bg-white/5 group-hover:bg-white/10 p-3 md:p-2 rounded-full transition-colors flex items-center justify-center">
+          <ArrowLeft size={18} className="md:size-4" />
         </div>
-        <div className="text-left">
+        {/* Hide text on mobile (sm screens and down) */}
+        <div className="text-left hidden md:block">
           <p className="text-[9px] uppercase tracking-[0.2em] mb-1">Previous</p>
           <h4 className="text-sm font-semibold uppercase tracking-widest">{prevPage.label}</h4>
         </div>
@@ -22,13 +23,18 @@ export default function SectionFooter({ nextPage, prevPage }) {
       {/* NEXT PAGE BUTTON */}
       <button 
         onClick={nextPage.onClick}
-        className="group flex items-center gap-6 bg-white/5 hover:bg-[#c5a059] border border-white/10 hover:border-[#c5a059] px-8 py-5 rounded-2xl transition-all duration-500"
+        className="group flex items-center justify-center md:justify-end gap-0 md:gap-6 
+                   bg-white/5 hover:bg-[#c5a059] border border-white/10 hover:border-[#c5a059] 
+                   p-3 md:px-8 md:py-5 rounded-full md:rounded-2xl transition-all duration-500"
       >
-        <div className="text-right">
+        {/* Hide labels on mobile */}
+        <div className="text-right hidden md:block">
           <p className="text-white/40 group-hover:text-black/60 text-[9px] uppercase tracking-[0.3em] mb-1">Next Module</p>
           <h4 className="text-white group-hover:text-black font-display text-lg uppercase tracking-widest">{nextPage.label}</h4>
         </div>
-        <div className="bg-white/10 group-hover:bg-black/20 p-2 rounded-full transition-colors">
+        
+        {/* Arrow stays visible */}
+        <div className="md:bg-white/10 md:group-hover:bg-black/20 md:p-2 rounded-full transition-colors">
           <ArrowRight size={20} className="text-white group-hover:text-black" />
         </div>
       </button>
