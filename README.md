@@ -8,9 +8,9 @@ An enterprise-grade, high-fidelity interactive dashboard engineered to articulat
 ---
 ## 🔍 Transparency & Acknowledgements
 
-This project was architected using a modern, AI-augmented development workflow, demonstrating the ability to leverage rapid prototyping tools while maintaining rigorous standards for custom UI/UX engineering.
+This project was made; in a strict timeframe in an open-book manner by utilizing all the avaliable tools on the internet (more on this later) to build this as fast as possible by keeping the quality standards and requirements in check.
 
-* **Initial Scaffolding:** The foundational boilerplate, routing structure, and initial React/Vite environment were rapidly prototyped using **[Bolt.new](https://bolt.new/)**.
+* **Initial Scaffolding:** The foundational skeleton, directory structure, and initial React/Vite environment were rapidly prototyped using **[Bolt.new](https://bolt.new/)** so as to start tailoring the project in the reqested direction as quickly as possible.
 * **AI-Assisted Engineering:** Majority of the design and functionality systems, cinematic scroll choreography, complex state management, hooks and overall UX storytelling were done and iteratively refined and polished in collaboration with an AI Assistant ([Gemini](https://gemini.google.com/) by Google).
 * **Financial Data:** Please note that while the metrics used (e.g., AED 45B+ Asset Valuation, 111M+ Footfall) are grounded in historical public reports and market trends, they are utilized here for illustrative portfolio purposes and do not represent official real-time Emaar financial disclosures.
 * **Visual Assets:** This project contains both AI generated and publicly available assets on the internet. Video and image assets are utilized under fair-use for conceptual demonstration. Brand logos and property imagery remain the intellectual property of their respective owners (Emaar Properties, et al.).
@@ -30,6 +30,8 @@ This project was architected using a modern, AI-augmented development workflow, 
 The platform is built on a modern, frontend stack prioritizing rendering speed, modularity, and maintainability/scalability.
 
 *   **Core Framework**: `React.js` (via `Vite` for optimized, lightning-fast HMR and production builds).
+*   **Database/Backend**: There is no backend functionality or database to store any kind of information entered by the user. Everything is on the front end only.
+*   **Scalability**: This project can be scaled further to include more components, a backend/database without any restructuring of the current framework and make it replicate a complete real working application.
 *   **Design System & Styling**: `Tailwind CSS`, utilizing a custom, highly disciplined **Obsidian & Gold** design token system for brand consistency.
 *   **Kinetic UI & Animation**: `Framer Motion` for orchestrating complex, staggered entry animations and layout transitions.
 *   **Data Visualization**: `Recharts` for performant, SVG-based quantitative charting.
