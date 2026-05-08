@@ -6,7 +6,15 @@
 An enterprise-grade, high-fidelity interactive dashboard engineered to articulate the value proposition of a flagship luxury retail destination. Designed for institutional investors, prospective luxury tenants, and executive stakeholders, this portal synthesizes complex demographic data, spatial capabilities, and tenant ecosystems into a seamless, high-performance digital experience.
 
 ---
+## 🔍 Transparency & Acknowledgements
 
+This project was architected using a modern, AI-augmented development workflow, demonstrating the ability to leverage rapid prototyping tools while maintaining rigorous standards for custom UI/UX engineering.
+
+* **Initial Scaffolding:** The foundational boilerplate, routing structure, and initial React/Vite environment were rapidly prototyped using **[Bolt.new](https://bolt.new/)**.
+* **AI-Assisted Engineering:** Majority of the design and functionality systems, cinematic scroll choreography, complex state management, hooks and overall UX storytelling were done and iteratively refined and polished in collaboration with an AI Assistant ([Gemini](https://gemini.google.com/) by Google).
+* **Financial Data:** Please note that while the metrics used (e.g., AED 45B+ Asset Valuation, 111M+ Footfall) are grounded in historical public reports and market trends, they are utilized here for illustrative portfolio purposes and do not represent official real-time Emaar financial disclosures.
+* **Visual Assets:** This project contains both AI generated and publicly available assets on the internet. Video and image assets are utilized under fair-use for conceptual demonstration. Brand logos and property imagery remain the intellectual property of their respective owners (Emaar Properties, et al.).
+---
 ## 📊 **Executive Modules & Functionality**
 
 *   **Immersive Frontdoor Architecture (Hero)**: A high-performance, cinematic video background engineered for high-immersion stakeholder onboarding without compromising render speeds.
@@ -19,7 +27,7 @@ An enterprise-grade, high-fidelity interactive dashboard engineered to articulat
 
 ## 🛠️ **Technical Architecture**
 
-The platform is built on a modern, decoupled frontend stack prioritizing rendering speed, modularity, and maintainability.
+The platform is built on a modern, frontend stack prioritizing rendering speed, modularity, and maintainability/scalability.
 
 *   **Core Framework**: `React.js` (via `Vite` for optimized, lightning-fast HMR and production builds).
 *   **Design System & Styling**: `Tailwind CSS`, utilizing a custom, highly disciplined **Obsidian & Gold** design token system for brand consistency.
@@ -33,6 +41,7 @@ The platform is built on a modern, decoupled frontend stack prioritizing renderi
 
 This application was engineered with strict performance tolerances to ensure a premium UX across all devices, particularly high-refresh-rate displays.
 
+*   **Mobile/Tablet Support**: Optimized to be comfortably viewed on mobile devices and tablets like iPhones and iPads or other small screen devices.
 *   **Locked 60+ FPS Rendering**: Heavily optimized render cycles and staggered animation mounting to ensure zero frame-drops or stuttering on 144Hz+ monitors.
 *   **Advanced Asset Delivery**: Universal implementation of `.webp` compression and `object-cover` focal cropping to minimize payload size while maintaining editorial-quality photography.
 *   **Apple-Tier CSS Masking**: Replaced standard overlay gradients with computationally efficient `mask-image` linear CSS gradients, eliminating rendering artifacts and providing seamless, true-transparent scroll fading.
